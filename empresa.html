@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="empresa.css" type="text/css" media="screen">
+    <link href="trabalhoFMU.html" media="screen">
+        <!--conexão com javascript-->
+    <script src="empresa.js" type="text/javascript"></script>
+    <title>Hambuegaria</title>
+</head>
+<body>
+    <!-- MENU DE NAVEGACAO -->
+  <header class="menu-principal">
+    <img class="logo" src="logo.png" > 
+    <nav class="menu">
+      <ul>
+        <li> <a href="trabalhoFMU.html "> Inicio  </a></li>
+        <li> <a href="cardapio.html"> Cardapio </a></li>
+        <li> <a href="contato.html"> Contato </a>
+          <li> <a href="empresa.html"> Empresa </a>
+        </li>
+    </nav>
+    <img class="carrinho" src="carrinho.png">
+  </header>
+
+  <h2 class="texto-empresa"> Puros Lanches </h2>
+  <p class="descricao"> Puros Lanches é a lanchonete que há seis anos vem conquistando milhares de pessoas
+   na região São Paulo. <br>
+   Nossa missão é proporcionar aos nossos clientes uma experiência gastronômica 
+   única, repleta de sabor e <br>  qualidade, com ingredientes frescos 
+    e selecionados, nossos lanches garantem uma explosão de sabores 
+    a <br> cada mordida com nosso cardápio diversificado que agrada a todos os gostos.
+    <br> Puros Lanches tambem oferece ambientes acolhedores 
+     e descontraídos, para que possam desfrutar de <br> momentos 
+     memoráveis com amigos e familiares.</p>
+
+    
+     <h2 class="avaliacao-cliente"> Avaliações de Clientes </h2>
+     <div class="publicar-comentario">
+      <input type="text" id="nome" placeholder="Seu nome" class="nome-comentario">
+      <br>
+     <textarea id="comentario" placeholder="Publicar avaliação" rows="4" cols="50"></textarea>
+     <br>
+     
+     <!--O usuario poderá avaliar com as estrelas com o valor de 1 a 5-->
+     <section class="estrela">
+      <input type="radio" id="star5" name="estrela-avaliacao" value="★">
+      <label for="star5"> </label>
+      <input type="radio" id="star4" name="estrela-avaliacao" value="★★">
+      <label for="star4"> </label>
+      <input type="radio" id="star3" name="estrela-avaliacao" value="★★★">
+      <label for="star3"> </label>
+      <input type="radio" id="star2" name="estrela-avaliacao" value="★★★★">
+      <label for="star2"> </label>
+      <input type="radio" id="star1" name="estrela-avaliacao" value="★★★★★">
+      <label for="star1"> </label>
+     </section>
+
+     <br>
+     <button onclick="postComment()" id="botao-comentario"> Publicar comentario </button>
+    
+
+      <!--aparecera os comentarios publicados pelo usuario-->
+     <div id="comentarios" class="view-comentario"></div> 
+     <br>
+     <div id="estrela" class="view-estrela"></div>
+
+     <!--Comentarios fixados como demostrativos-->
+     <p class="public-comentario"> Luana: <br> super recomendo,tem diveras opções no cardapio <br> ★★★★★ </p>
+     <p class="public-comentario"> Vitor Santos: <br> uma sugestão de cardapio é que poderia ter 
+      <br> opções para os vegetarianos <br> ★★★★ </p>
+    </div>
+
+ 
+    
+</body>
+</html>

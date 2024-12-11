@@ -1,0 +1,198 @@
+body {
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  .logo{
+    width: 30px;
+    height: 35px;
+  
+  }
+  /*BARRA DE NAVEGACAO*/
+  .menu-principal {
+    background-color: #5a0404;
+    margin-top: -3%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /*IMAGEM LOGO DA BARRA DE NAVEGACAO*/
+  .logo{
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+  }
+  .carrinho{
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+  /*MENU DE NAVEGACAO*/
+  .menu ul li {
+    background-color: #5a0404;
+    color: white;
+    float: left;
+    width: 80px;
+    text-align: center;
+    /*deixa o texto do sub-menu no centro*/
+    line-height: 40px;
+    margin-top: 10%;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  
+  /*TEXTO DO MENU DE NAVEGACAO*/
+  .menu ul li a {
+    color: white;
+    /*cor das letras no menu*/
+    text-decoration: none;
+    line-height: 40px;
+  }
+  
+  .menu ul ul {
+    display: none;
+    /*submenu fica escondido e so aparecera quando passar o mouse em cima */
+    position: absolute;
+    left: 600px;
+    z-index: 2;
+    margin-top: 5px;
+  }
+  
+  .menu ul ul {
+    width: 60px;
+  }
+  
+  .menu ul ul li a {
+    display: block;
+  }
+  .menu ul li :hover{
+   list-style: red;
+  }
+  .texto-cardapio{
+    color: #d10000;
+   margin-left: 40%;
+   text-decoration: underline #5a0404;
+  }
+
+  
+.container-contato {
+  margin-left: 25%;
+}
+input[type=text], select, textarea {
+  width: 60%;
+  padding: 12px;
+}
+input[type=email], select, textarea {
+  width: 60%;
+  padding: 12px;
+}
+input[type=tel], select, textarea {
+  width: 60%;
+  padding: 12px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+button[type=reset]{
+  background-color: #d10000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+
+
+}
+button[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 290px;
+
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*caixa de confirmação do formulario*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.modal-envio {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* Estilo da caixa de diálogo */
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+/* Estilo do título da caixa de diálogo */
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo do corpo da caixa de diálogo */
+.modal-body {
+  margin-bottom: 10px;
+}
+
+/* Estilo dos botões */
+.modal-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*botao de sair X */
+.modal-button-close{
+  color: white;
+  background-color: #d10000;
+  margin-left: 370px;
+  border: none;
+}
+/* Estilo do botão "Sim" */
+.modal-button-sim {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Estilo do botão "Não" */
+.modal-button-nao {
+  background-color: #d10000;
+  color: white;
+}

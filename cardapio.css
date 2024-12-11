@@ -1,0 +1,91 @@
+body {
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  .logo{
+    width: 30px;
+    height: 35px;
+  
+  }
+  /*BARRA DE NAVEGACAO*/
+  .menu-principal {
+    background-color: #5a0404;
+    margin-top: -3%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /*IMAGEM LOGO DA BARRA DE NAVEGACAO*/
+  .logo{
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+  }
+  .carrinho{
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+  /*MENU DE NAVEGACAO*/
+  .menu ul li {
+    background-color: #5a0404;
+    color: white;
+    float: left;
+    width: 80px;
+    text-align: center;
+    /*deixa o texto do sub-menu no centro*/
+    line-height: 40px;
+    margin-top: 10%;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  
+  /*TEXTO DO MENU DE NAVEGACAO*/
+  .menu ul li a {
+    color: white;
+    /*cor das letras no menu*/
+    text-decoration: none;
+    line-height: 40px;
+  }
+  
+  .menu ul ul {
+    display: none;
+    /*submenu fica escondido e so aparecera quando passar o mouse em cima */
+    position: absolute;
+    left: 600px;
+    z-index: 2;
+    margin-top: 5px;
+  }
+  
+  .menu ul ul {
+    width: 60px;
+  }
+  .menu ul ul li a {
+    display: block;
+  }
+  .menu ul li :hover{
+   list-style: red;
+  }
+  .texto-cardapio{
+   color: #d10000;
+   margin-left: 40%;
+   text-decoration: underline #5a0404;
+  }
+  .cardapio-imagens img{
+    width: 290px;
+    margin-left: 5%;
+
+  }
+  .cardapio-imagens p,details{
+    color:#d10000;
+    margin-top: -3px;
+    margin-left: 30%;
+  }
+  
+  
